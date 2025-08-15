@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding: 0 24px;
+    gap: 8px;
+    background-color: var(--background);
+}
+
+.title {
+    color: var(--main-dark-color);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.list-commit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+
+}
+
+.list-commit>*+*::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 70%;
+    border-left: 1px solid #ccc;
+}
+
+.list-item {
+    padding: 8px 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}

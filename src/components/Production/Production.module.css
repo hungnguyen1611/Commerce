@@ -1,0 +1,41 @@
+.wrapper {
+    background-color: var(--background);
+    padding: 16px;
+}
+
+
+.title-img {
+    width: 204px;
+}
+
+.list-card {
+
+    border: 1px solid var(--background);
+    width: 100%;
+    /* để responsive */
+
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    place-items: center;
+
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

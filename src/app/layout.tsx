@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
+import classNames from "classnames/bind";
+import HeaderTop from "@/components/Header/HeaderTop/HeaderTop";
+import SideBar from "@/components/SideBar/SideBar";
+import Header from "@/components/Header/header";
+import HeaderBottom from "@/components/Header/HeaderBottom/HeaderBottom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,10 +30,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cx = classNames.bind(styles);
+
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body>
+        <div className={cx("wrapper")}>
+          <HeaderTop />
+          <Header />
+          <HeaderBottom />
+
+          <div className={`${cx("content")} container`}>
+            <SideBar /> <main>{children}</main>
+          </div>
+        </div>
       </body>
     </html>
   );

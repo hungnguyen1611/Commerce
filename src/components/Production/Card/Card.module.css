@@ -1,0 +1,57 @@
+.wrapper {
+    border: 1px solid var(--background-secondary);
+    padding: 16px;
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+}
+
+.currency {
+    font-size: 1.8rem;
+    color: red;
+}
+
+.before-currency {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+
+}
+
+.percent-sale {
+    color: red;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+
+.card-content {
+    margin-bottom: 32px;
+}
+
+.card-content>*+* {
+    margin-top: 8px;
+
+}
+
+.card-footer>span {
+    color: var(--text-secondary);
+}
+
+.card-footer {
+    border-top: 1px solid var(--background-secondary);
+    text-align: center;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-footer-img {
+    width: 32px;
+}

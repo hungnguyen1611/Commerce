@@ -1,19 +1,63 @@
 :root {
+  --main-color: rgb(10, 104, 255);
+  --main-dark-color: rgb(0, 62, 161);
+  --main-light-color: rgb(10, 104, 255);
+  --green-color: #00a63e;
+
+
   --background: #ffffff;
   --foreground: #171717;
+  --background-secondary: #efefef;
+  --background-light-green: rgb(239, 255, 244);
+
+
+  --background-hover: rgba(10, 104, 255, 0.2);
+
+  --text-secondary: rgb(128, 128, 137);
+
+
+  --height-header-top: 42px;
+  --height-header-bottom: 48px;
+  --height-header: 88px;
+  --height-content: calc(var(--height-header)-var(var(--height-header-top))-var(var(--height-header-bottom)))
 }
 
+
+
+
+
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+  text-size-adjust: 100%;
+  overflow-y: auto;
+  height: 100vh;
+
+
+}
+
+* {
+  box-sizing: inherit;
+  font-size: 14px;
+
 }
 
 body {
@@ -35,8 +79,55 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 16px 8px;
+  line-height: 1.8;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
+  }
+}
+
+
+
+
+/* Container mặc định */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  /* khoảng trống 2 bên */
+  padding-right: 16px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1400px;
   }
 }

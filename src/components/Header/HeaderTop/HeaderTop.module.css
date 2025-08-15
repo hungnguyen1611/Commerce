@@ -1,0 +1,18 @@
+.wrapper {
+    background-color: var(--background-light-green);
+    height: var(--height-header-top);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.text {
+    font-size: 1.2rem;
+    color: var(--green-color);
+}
+
+.image {
+    width: 79px;
+}

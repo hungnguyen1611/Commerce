@@ -1,0 +1,77 @@
+.wrapper {
+    position: relative;
+    padding: 8px 16px;
+    /* margin: 0 -8px; */
+    background: var(--background);
+
+    /* bù padding slide để không bị dư khoảng trắng ngoài slider */
+}
+
+.slideImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    padding: 0 8px;
+}
+
+/* Ẩn mũi tên mặc định */
+.slickPrev,
+.slickNext {
+    z-index: 2;
+}
+
+.slickPrev::before,
+.slickNext::before {
+    display: none;
+}
+
+/* Nút custom */
+.slickPrev,
+.slickNext {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: var(--main-color);
+    filter: var(--main-color);
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.slickPrev {
+    left: -18px;
+
+}
+
+.slickNext {
+    right: -18px;
+}
+
+/* Dot custom */
+.slickDots {
+    bottom: -32px;
+}
+
+.slickDots li button::before {
+    display: block;
+    /* bắt buộc để width/height có hiệu lực */
+    width: 20px;
+    /* chiều ngang */
+    height: 4px;
+    /* chiều dọc */
+    background-color: #ccc;
+    /* màu mặc định */
+    border-radius: 2px;
+    /* bo góc */
+    content: "";
+    /* cần thiết để pseudo-element hiển thị */
+}
+
+
+.slickDots li.slick-active button::before {
+    color: #007aff;
+}

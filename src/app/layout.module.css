@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-secondary);
+  /* align-items: center; */
+  /* Chiều cao tối thiểu toàn màn hình */
+}
+
+.header {
+  background: var(--background);
+
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  flex: 1;
+  padding: 16px 24px 0;
+  gap: 24px;
+  height: var(--height-content);
+  overflow: hidden;
+
+}
+
+.content>main {
+  height: var(--height-main);
+  /* background: var(--background); */
+  padding: 16px;
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  height: 100%;
+  /* Ngăn overflow phá layout */
+
+}
+
+.content> :first-child {
+  background: var(--background);
+  /* Màu nền sidebar */
+  padding: 16px;
+  overflow-y: auto;
+  height: 100%;
+
+
+}

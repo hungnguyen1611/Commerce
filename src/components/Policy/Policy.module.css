@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    padding: 16px;
+    background: var(--background);
+    gap: 16px;
+    overflow-x: hidden;
+
+}
+
+.policy-img {
+    width: 44px;
+    border-radius: 12px;
+
+}
+
+.title-policy {}
+
+.policy-item {
+    text-align: center;
+
+}
+
+.policy-item>*+* {
+    margin-top: 4px;
+}

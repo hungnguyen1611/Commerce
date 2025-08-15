@@ -1,0 +1,56 @@
+.wrapper {
+    background: var(--background);
+    padding: 32px 24px;
+}
+
+.list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* justify-content: space-between; */
+
+}
+
+.list-item-menu {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.list-item-menu>li {
+
+    color: var(--text-secondary);
+}
+
+.list-item-menu>li+li {
+    /* margin-top: 8px; */
+    margin-left: 8px;
+}
+
+.menu-title {
+    font-size: 1.8rem;
+}
+
+.address-company {
+    margin-top: 32px;
+}
+
+.address-company>p+p {
+    margin-top: 8px;
+
+}
+
+.address-company>p {
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.address-company> :first-child {
+    margin-bottom: 16px;
+}
+
+.address-company-title {
+    font-size: 1.8rem;
+}
