@@ -14,8 +14,8 @@
 
 .card-extend {
     visibility: hidden;
-
     transition: visibility 0s linear 0.3s;
+
 }
 
 .wrapper:hover .card-extend {
@@ -50,13 +50,13 @@
 }
 
 .card-active-heart {
-    top: 16;
-    right: 16;
+    top: 16px;
+    right: 16px;
 }
 
 .card-active-compare {
-    top: 56;
-    right: 16;
+    top: 56px;
+    right: 16px;
     opacity: 0;
     transform: translateX(100%);
 
