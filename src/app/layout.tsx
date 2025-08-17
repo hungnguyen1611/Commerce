@@ -9,16 +9,17 @@ import Header from "@/components/Header/header";
 import HeaderBottom from "@/components/Header/HeaderBottom/HeaderBottom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "tippy.js/dist/tippy.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,9 +37,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={cx("wrapper")}>
-          <HeaderTop />
-          <Header />
-          <HeaderBottom />
+          <div className={cx("header")}>
+            <HeaderTop />
+            <Header />
+            <HeaderBottom />
+          </div>
 
           <div className={`${cx("content")} container`}>
             <SideBar /> <main>{children}</main>

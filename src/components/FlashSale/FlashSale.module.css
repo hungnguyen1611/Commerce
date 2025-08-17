@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: var(--background);
+    padding: 16px;
+}
+
+.wrapper> :first-child {
+    margin-bottom: 16px;
+}
+
+
+.list-card {
+
+    border: 1px solid var(--background);
+    width: 100%;
+    /* để responsive */
+
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    place-items: center;
+
+}

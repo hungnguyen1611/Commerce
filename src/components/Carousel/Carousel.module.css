@@ -51,6 +51,16 @@
     right: -18px;
 }
 
+.slickNext:hover,
+.slickPrev:hover {
+
+    box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.2);
+
+
+
+    background-color: white;
+}
+
 /* Dot custom */
 .slickDots {
     bottom: -32px;

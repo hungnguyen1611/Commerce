@@ -1,0 +1,28 @@
+.wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding-left: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--background-secondary);
+    background-color: var(--background);
+    z-index: 2;
+
+
+}
+
+.info-list {
+
+    padding: 16px;
+
+}
+
+.info-item {
+    list-style: circle;
+    /* color: var(--text-secondary); */
+}
+
+.info-list>li+li {
+    margin-top: 8px;
+}

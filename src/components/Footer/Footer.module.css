@@ -1,56 +1,67 @@
-.wrapper {
-    background: var(--background);
-    padding: 32px 24px;
+.footer {
+    background: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #eee;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
 }
 
-.list-menu {
-    display: flex;
-    flex-wrap: wrap;
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
-    /* justify-content: space-between; */
-
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    padding: 24px;
 }
 
-.list-item-menu {
-    margin-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
+
+.footerCol h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 
-.list-item-menu>li {
-
-    color: var(--text-secondary);
+.footerCol ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.list-item-menu>li+li {
-    /* margin-top: 8px; */
-    margin-left: 8px;
+.footerCol ul li {
+    margin-bottom: 8px;
 }
 
-.menu-title {
-    font-size: 1.8rem;
+.footerCol ul li a {
+    color: #333;
+    text-decoration: none;
 }
 
-.address-company {
-    margin-top: 32px;
+.footerCol ul li a:hover {
+    text-decoration: underline;
 }
 
-.address-company>p+p {
-    margin-top: 8px;
 
+.certificates img,
+.payment img,
+.payment svg,
+.social svg,
+.apps img {
+    max-height: 40px;
+    margin: 4px 8px;
 }
 
-.address-company>p {
-    line-height: 1.5;
-    color: var(--text-secondary);
+.social img {
+    width: 32px;
+    height: 32px;
 }
 
-.address-company> :first-child {
-    margin-bottom: 16px;
+.apps img {
+    height: 40px;
 }
 
-.address-company-title {
-    font-size: 1.8rem;
+.logo_tikinow {
+    width: 100px;
+
 }

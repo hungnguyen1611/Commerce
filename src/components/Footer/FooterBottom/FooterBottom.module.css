@@ -1,0 +1,59 @@
+.footerBottom {
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.companyInfo {
+    margin-bottom: 20px;
+}
+
+.companyInfo h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.companyInfo p {
+    margin: 4px 0;
+}
+
+.companyInfo a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.companyInfo a:hover {
+    text-decoration: underline;
+}
+
+.intro h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.intro h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 6px;
+}
+
+.intro p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.intro a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}

@@ -1,18 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Card from "../Card/Card";
-import styles from "./Production.module.css";
+
+import styles from "./YouMayLike.module.css";
 import classNames from "classnames/bind";
-export default function Production({ data }: IProductTypes) {
+import Card from "../Card/Card";
+export default function YouMayLike({ data }: IProductTypes) {
   const cx = classNames.bind(styles);
 
   return (
     <div className={`${cx("wrapper")}`}>
-      <img
-        className={`${cx("title-img")}`}
-        alt="deal"
-        src={"/assets/images/deal.png"}
-      />
+      <h5 className={cx("foreign-title")}>Bạn Có Thể Thích</h5>
       <div className={`${cx("list-card")}`}>
         {data.map((item, index) => (
           <Card key={index} production={item} />
