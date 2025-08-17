@@ -1,0 +1,26 @@
+.wrapper {
+    /* background-color: var(--background); */
+    padding: 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+
+}
+
+.brand-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.brand-img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.list-brand {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}

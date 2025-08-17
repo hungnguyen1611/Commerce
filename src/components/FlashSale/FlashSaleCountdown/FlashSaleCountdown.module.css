@@ -1,0 +1,27 @@
+.flashSale {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 8px;
+}
+
+.label {
+    font-weight: bold;
+    /* color: #ff0000;   */
+    font-size: 1.8rem;
+}
+
+.countdown {
+    display: flex;
+    gap: 4px;
+}
+
+.time {
+    background-color: #ff0000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 28px;
+    text-align: center;
+}

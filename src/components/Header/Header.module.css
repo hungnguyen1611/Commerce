@@ -1,74 +1,108 @@
 .wrapper {
-    height: var(--height-header);
+    padding: 16px;
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    gap: 36px;
-    padding: 0 24px;
-    background-color: var(--background);
+    gap: 32px;
+
+}
+
+.header-logo>p {
+    color: white;
+    font-weight: bold;
 
 }
 
 .logo {
-    width: 96px;
+    width: 120px;
 }
 
-.logo-text {
-    font-size: 1.4rem;
-    color: var(--main-dark-color);
-    font-weight: bold;
-    text-align: center;
-    margin-top: 8px;
+.download-container {
+    position: relative;
+    display: inline-block;
 
+}
+
+.download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.qr-code {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+}
+
+.download-container:hover .qr-code {
+    display: block;
+    visibility: visible;
+}
+
+.search-acount-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-right {
+    flex: 1;
 
 }
 
 .categories-wrapper {
     display: flex;
-    gap: 8px;
-
+    justify-content: space-between;
 }
 
 .categories {
     display: flex;
+    gap: 16px;
+    color: white;
+    margin-top: 12px;
+}
+
+.acount {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.acount-link {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
-    color: var(--text-secondary);
-    flex: 1;
+    color: white;
 }
 
-.wrapper-search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 12px;
-}
-
-.wrapper-search>*+* {
-    margin-top: 8px;
-
-}
-
-.actions {
-
-    display: flex;
-    gap: 24px;
-}
-
-.action-button {
-    color: var(--text-secondary);
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.search-actionssearch-actions {
+.place {
     display: flex;
     gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+    color: white;
+    font-weight: 600;
 }
 
-.location {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.address {
+    text-decoration: underline;
 }

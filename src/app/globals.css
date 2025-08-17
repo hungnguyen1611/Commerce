@@ -3,12 +3,16 @@
   --main-dark-color: rgb(0, 62, 161);
   --main-light-color: rgb(10, 104, 255);
   --green-color: #00a63e;
+  --green-light-color: #f0fdf4;
+  --header-bg: linear-gradient(-180deg, #f53d2d, #f63);
+
 
 
   --background: #ffffff;
   --foreground: #171717;
   --background-secondary: #efefef;
   --background-light-green: rgb(239, 255, 244);
+  --background-hover-menu: #ccc;
 
 
   --background-hover: rgba(10, 104, 255, 0.2);
@@ -16,7 +20,7 @@
   --text-secondary: rgb(128, 128, 137);
 
 
-  --height-header-top: 42px;
+  --height-header-top: 32px;
   --height-header-bottom: 48px;
   --height-header: 88px;
   --height-content: calc(var(--height-header)-var(var(--height-header-top))-var(var(--height-header-bottom)))
@@ -55,7 +59,7 @@ body {
 }
 
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-size: 14px;
 
 }
@@ -98,6 +102,9 @@ li {
   }
 }
 
+.tippy-arrow {
+  color: #ffffff !important;
+}
 
 
 
