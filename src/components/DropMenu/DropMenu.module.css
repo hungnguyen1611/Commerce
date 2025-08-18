@@ -1,4 +1,6 @@
 .custom-tippy {
     background: #ffffff !important;
-
+    min-width: 90px;
+    display: flex;
+    justify-content: center;
 }

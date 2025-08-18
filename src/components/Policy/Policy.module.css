@@ -11,12 +11,14 @@
     width: 44px;
     border-radius: 12px;
 
+
 }
 
-.title-policy {}
+
 
 .policy-item {
     text-align: center;
+    cursor: pointer;
 
 }
 

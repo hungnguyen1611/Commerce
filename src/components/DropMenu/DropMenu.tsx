@@ -23,7 +23,7 @@ export default function Dropmenu({
 
   return (
     <Tippy
-      className={cx("custom-tippy")}
+      className={`${cx("custom-tippy")}`}
       interactive
       placement={placement}
       content={content}

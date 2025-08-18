@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import styles from "./Card.module.css";
-import classNames from "classnames/bind";
-import { FaStar } from "react-icons/fa";
+"use client";
+
+import CompareIcon from "@/assets/Icons/CompareIcon";
 import { Formatter } from "@/utils/format";
-import { FiBox } from "react-icons/fi";
-import { FaShoppingCart } from "react-icons/fa";
+import classNames from "classnames/bind";
 import { CiHeart } from "react-icons/ci";
-import { IoIosGitCompare } from "react-icons/io";
+import { FaShoppingCart, FaStar } from "react-icons/fa";
+import { FiBox } from "react-icons/fi";
+import Dropmenu from "../DropMenu/DropMenu";
+import styles from "./Card.module.css";
 import CardExtend from "./CardExtend/CardExtend";
 interface Iprops {
   production: {
@@ -43,9 +44,15 @@ export default function Card({ production }: Iprops) {
           </span>
         </p>
         <p className={`${cx("currency")}`}>
-          {Formatter.format(100000)}{" "}
+          {Formatter.format(100000)}
           <span className={`${cx("cart-icon")}`}>
-            <FaShoppingCart size={20} />
+            <Dropmenu
+              placement="top"
+              offset={[0, 20]}
+              content={<span>Add to cart</span>}
+            >
+              <FaShoppingCart size={20} />
+            </Dropmenu>
           </span>
         </p>
 
@@ -61,12 +68,25 @@ export default function Card({ production }: Iprops) {
         />
         <span>Giao hàng siêu tốc 2h</span>
       </div> */}
+
       <div className={cx("card-active", "card-active-heart")}>
-        <CiHeart size={20} />
+        <Dropmenu
+          offset={[0, 20]}
+          placement="top"
+          content={<span>Wishlist</span>}
+        >
+          <CiHeart size={20} />
+        </Dropmenu>
       </div>
 
       <div className={`${cx("card-active", "card-active-compare")}`}>
-        <IoIosGitCompare size={20} />
+        <Dropmenu
+          offset={[0, 20]}
+          placement="bottom"
+          content={<span>Compare</span>}
+        >
+          <CompareIcon />
+        </Dropmenu>
       </div>
       <div className={cx("card-extend")}>
         <CardExtend />
