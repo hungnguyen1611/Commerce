@@ -168,12 +168,7 @@ export default function Footer() {
                 fill="#0B74E5"
               ></rect>
             </svg>
-            <img
-              alt="viettelpay"
-              src={
-                "http://localhost:3001/_next/static/media/icon-viettelpay.f91ca2fa.svg"
-              }
-            />
+            <img alt="viettelpay" src={"/assets/images/icon-viettelpay.svg"} />
           </div>
           <h4>Dịch vụ giao hàng</h4>
           <img
