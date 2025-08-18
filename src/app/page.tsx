@@ -10,6 +10,7 @@ import Brand from "@/components/Brand/Brand";
 import ForeignProduct from "@/components/ForeignProduct/ForeignProduct";
 import YouMayLike from "@/components/YouMayLike/YouMayLike";
 import ProductImageList from "@/components/ProductImageList/ProductImageList";
+import FloatingSidebar from "@/components/FloatingSidebar/FloatingSidebar";
 
 const deals = [
   {
@@ -169,6 +170,7 @@ export default function Home() {
       <YouMayLike data={deals} />
       <ProductImageList data={brands} />
       <Footer />
+      <FloatingSidebar />
     </div>
   );
 }

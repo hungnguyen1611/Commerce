@@ -1,0 +1,59 @@
+.container {
+    position: fixed;
+    bottom: 20px;
+    /* cách đáy màn hình */
+    right: 20px;
+    /* cách phải màn hình */
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    /* xanh dương */
+    border-radius: 12px;
+    padding: 8px 0;
+    width: 70px;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* đổ bóng nhẹ */
+    z-index: 9999;
+    /* đảm bảo nằm trên cùng */
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 0;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.icon {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.badge {
+    position: absolute;
+    top: 4px;
+    right: 14px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
