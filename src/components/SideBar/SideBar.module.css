@@ -3,6 +3,12 @@
 
 }
 
+
+/* Chrome, Safari, Edge (Webkit) */
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
 .categories {
     display: flex;
     flex-direction: column;

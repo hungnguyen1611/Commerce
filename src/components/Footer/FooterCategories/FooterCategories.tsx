@@ -61,7 +61,32 @@ const categories: Category[] = [
       "Dược mỹ phẩm",
     ],
   },
-  // 👉 Bạn có thể bổ sung các category khác giống trong hình
+  {
+    title: "Làm Đẹp – Sức Khỏe",
+    links: [
+      "Chăm sóc da mặt",
+      "Dụng cụ làm đẹp",
+      "Thực phẩm chức năng",
+      "Trang điểm",
+      "Chăm sóc cơ thể",
+      "Nước hoa",
+      "Đồ dùng y tế",
+      "Dược mỹ phẩm",
+    ],
+  },
+  {
+    title: "Làm Đẹp – Sức Khỏe",
+    links: [
+      "Chăm sóc da mặt",
+      "Dụng cụ làm đẹp",
+      "Thực phẩm chức năng",
+      "Trang điểm",
+      "Chăm sóc cơ thể",
+      "Nước hoa",
+      "Đồ dùng y tế",
+      "Dược mỹ phẩm",
+    ],
+  },
 ];
 
 const FooterCategories: React.FC = () => {
