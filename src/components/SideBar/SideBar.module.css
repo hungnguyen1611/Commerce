@@ -1,15 +1,23 @@
 .wrapper {
     overflow-y: auto;
+
 }
 
 .categories {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
+}
+
+.categories>div {
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 8px;
 }
 
 .categories-img {
     width: 32px;
+
 }
 
 .categories-button {

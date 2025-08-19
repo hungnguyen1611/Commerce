@@ -108,6 +108,15 @@ li {
 
 
 
+.tippy-content,
+.tippy-box {
+  border-radius: 8px !important;
+}
+
+
+
+
+
 /* Container mặc định */
 .container {
   width: 100%;

@@ -7,9 +7,9 @@
   /* Chiều cao tối thiểu toàn màn hình */
 }
 
-.header {
+.header-container {
   background: var(--header-bg);
-
+  padding: 0 24px;
 
 }
 
@@ -37,7 +37,7 @@
 }
 
 .content> :first-child {
-  background: var(--background);
+  /* background: var(--background); */
   /* Màu nền sidebar */
   padding: 16px;
   overflow-y: auto;

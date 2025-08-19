@@ -7,6 +7,41 @@
     /* bù padding slide để không bị dư khoảng trắng ngoài slider */
 }
 
+
+/* Dot custom */
+
+.wrapper :global(.slick-dots) {
+
+    bottom: -28px;
+
+}
+
+
+.wrapper :global(.slick-dots > li) {
+    width: 25px;
+    height: 4px;
+}
+
+
+.wrapper :global(.slick-dots > li > button::before) {
+
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+
+.wrapper :global(.slick-dots > li.slick-active > button::before) {
+    background-color: var(--main-color);
+
+}
+
+.wrapper :global(.slick-dots li button:hover::before) {
+    background-color: var(--main-color) !important;
+}
+
+
 .slideImage {
     width: 100%;
     height: auto;
@@ -59,29 +94,4 @@
 
 
     background-color: white;
-}
-
-/* Dot custom */
-.slickDots {
-    bottom: -32px;
-}
-
-.slickDots li button::before {
-    display: block;
-    /* bắt buộc để width/height có hiệu lực */
-    width: 20px;
-    /* chiều ngang */
-    height: 4px;
-    /* chiều dọc */
-    background-color: #ccc;
-    /* màu mặc định */
-    border-radius: 2px;
-    /* bo góc */
-    content: "";
-    /* cần thiết để pseudo-element hiển thị */
-}
-
-
-.slickDots li.slick-active button::before {
-    color: #007aff;
 }

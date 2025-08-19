@@ -11,6 +11,7 @@ import { FiBox } from "react-icons/fi";
 import Dropmenu from "../DropMenu/DropMenu";
 import styles from "./Card.module.css";
 import CardExtend from "./CardExtend/CardExtend";
+import TooltipCard from "../TooltipCard/ToolTipCard";
 interface Iprops {
   production: {
     href: string;
@@ -30,12 +31,15 @@ export default function Card({ production }: Iprops) {
           src={production?.urlImage}
         />
         <p className={`${cx("product-name")}`}>Product Name</p>
-        <div className={`${cx("stars")}`}>
-          <FaStar style={{ fill: "#fce803", stroke: "black" }} />
-          <FaStar style={{ fill: "#fce803", stroke: "black" }} />
-          <FaStar style={{ fill: "#fce803", stroke: "black" }} />
-          <FaStar style={{ fill: "#fce803", stroke: "black" }} />
-          <FaStar style={{ fill: "#fce803", stroke: "black" }} />
+        <div className={`${cx("stars-wrapper")}`}>
+          <div className={`${cx("stars")}`}>
+            <FaStar style={{ fill: "#fce803", stroke: "black" }} />
+            <FaStar style={{ fill: "#fce803", stroke: "black" }} />
+            <FaStar style={{ fill: "#fce803", stroke: "black" }} />
+            <FaStar style={{ fill: "#fce803", stroke: "black" }} />
+            <FaStar style={{ fill: "#fce803", stroke: "black" }} />
+          </div>
+          5
         </div>
         <p>
           {/* <span className={`${cx("percent-sale")}`}>-40%</span>{" "} */}
@@ -45,15 +49,16 @@ export default function Card({ production }: Iprops) {
         </p>
         <p className={`${cx("currency")}`}>
           {Formatter.format(100000)}
-          <span className={`${cx("cart-icon")}`}>
-            <Dropmenu
-              placement="top"
-              offset={[0, 20]}
-              content={<span>Add to cart</span>}
-            >
+
+          <TooltipCard
+            placement="top"
+            // offset={[0, 20]}
+            content={<span>Add to cart</span>}
+          >
+            <span className={`${cx("cart-icon")}`}>
               <FaShoppingCart size={20} />
-            </Dropmenu>
-          </span>
+            </span>
+          </TooltipCard>
         </p>
 
         <div className={`${cx("today-shipping")}`}>
@@ -70,23 +75,23 @@ export default function Card({ production }: Iprops) {
       </div> */}
 
       <div className={cx("card-active", "card-active-heart")}>
-        <Dropmenu
+        <TooltipCard
           offset={[0, 20]}
           placement="top"
           content={<span>Wishlist</span>}
         >
           <CiHeart size={20} />
-        </Dropmenu>
+        </TooltipCard>
       </div>
 
       <div className={`${cx("card-active", "card-active-compare")}`}>
-        <Dropmenu
+        <TooltipCard
           offset={[0, 20]}
           placement="bottom"
           content={<span>Compare</span>}
         >
           <CompareIcon />
-        </Dropmenu>
+        </TooltipCard>
       </div>
       <div className={cx("card-extend")}>
         <CardExtend />
