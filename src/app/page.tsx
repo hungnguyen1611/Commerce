@@ -157,6 +157,7 @@ const brands = [
     height: 600,
   },
 ];
+
 export default function Home() {
   const cx = classNames.bind(styles);
   return (

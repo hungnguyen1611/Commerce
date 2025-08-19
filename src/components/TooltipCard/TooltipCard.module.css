@@ -1,0 +1,19 @@
+.custom-tippy {
+    background: #000 !important;
+    min-width: 90px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.custom-tippy :global(.tippy-content) {
+    background: #000;
+
+
+}
+
+.custom-tippy :global(.tippy-arrow) {
+    color: #000 !important;
+
+}

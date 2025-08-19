@@ -1,15 +1,29 @@
 .wrapper {
     overflow-y: auto;
+
+}
+
+
+/* Chrome, Safari, Edge (Webkit) */
+.wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .categories {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
+}
+
+.categories>div {
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 8px;
 }
 
 .categories-img {
     width: 32px;
+
 }
 
 .categories-button {

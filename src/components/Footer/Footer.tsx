@@ -4,7 +4,133 @@ import styles from "./Footer.module.css";
 import FooterBottom from "./FooterBottom/FooterBottom";
 import FeaturedBrands from "./FeaturedBrands/FeaturedBrands";
 import FooterCategories from "./FooterCategories/FooterCategories";
-
+const categories = [
+  {
+    name: "Điện thoại - Máy tính bảng",
+    items: [
+      "Điện thoại Samsung",
+      "Điện thoại iPhone",
+      "Máy tính bảng iPad",
+      "Máy tính bảng Samsung",
+      "Máy lanh - Máy giặt",
+      "Máy chạy bộ",
+    ],
+  },
+  {
+    name: "Laptop - Súc Khoẻ",
+    items: [
+      "Laptop Dell",
+      "Laptop HP",
+      "Máy chạy bộ",
+      "Laptop Asus",
+      "Laptop Lenovo",
+      "Máy massage",
+    ],
+  },
+  {
+    name: "Thời trang nam",
+    items: [
+      "Áo thun nam",
+      "Quần nam",
+      "Áo vest - áo khoác",
+      "Áo hoodie nam",
+      "Đồ ngủ nam",
+      "Giày dép nam",
+    ],
+  },
+  {
+    name: "Thời trang nữ",
+    items: [
+      "Áo nữ",
+      "Chân váy",
+      "Đầm váy",
+      "Đồ lót nữ",
+      "Áo khoác nữ",
+      "Giày dép nữ",
+    ],
+  },
+  {
+    name: "Phụ kiện thời trang",
+    items: [
+      "Phụ kiện thắt lưng",
+      "Mắt kính",
+      "Phụ kiện túi xách",
+      "Phụ kiện đồng hồ",
+      "Phụ kiện khăn choàng",
+      "Phụ kiện mũ",
+    ],
+  },
+  {
+    name: "Đồng hồ - Tràng sức",
+    items: [
+      "Đồng hồ nam",
+      "Đồng hồ nữ",
+      "Trang sức đá quý",
+      "Vòng cổ",
+      "Bông tai",
+      "Lắc tay",
+    ],
+  },
+  {
+    name: "Giày - Dép",
+    items: [
+      "Giày cao gót",
+      "Dép - Guốc",
+      "Giày thể thao",
+      "Giày sandal",
+      "Giày lười",
+      "Dép tông",
+    ],
+  },
+  {
+    name: "Túi thời trang",
+    items: [
+      "Túi xách tay",
+      "Túi đeo chéo",
+      "Ví da",
+      "Túi đựng đồ cá nhân",
+      "Túi laptop",
+      "Túi du lịch",
+    ],
+  },
+  {
+    name: "Voucher - Dịch vụ",
+    items: [
+      "Voucher ăn uống",
+      "Voucher du lịch",
+      "Thẻ nạp điện thoại",
+      "Thẻ game",
+      "Dịch vụ làm đẹp",
+      "Dịch vụ sửa chữa",
+    ],
+  },
+  {
+    name: "Máy ảnh - Máy Quay Phim",
+    items: [
+      "Máy ảnh Canon",
+      "Máy quay phim",
+      "Máy ảnh Sony",
+      "Máy ảnh Nikon",
+      "Máy ảnh Fujifilm",
+      "Phụ kiện máy ảnh",
+    ],
+  },
+  {
+    name: "Ô tô - Xe máy - Xe điện",
+    items: [
+      "Xe scooter",
+      "Địch vụ, lắp đặt",
+      "Xe đạp",
+      "Xe máy",
+      "Xe hơi",
+      "Phụ kiện xe",
+    ],
+  },
+  {
+    name: "Nhà Sách Tiki",
+    items: ["Sách nói", "Văn phòng phẩm", "Quà lưu niệm", "English Books"],
+  },
+];
 export default function Footer() {
   return (
     <footer className={styles.footer}>

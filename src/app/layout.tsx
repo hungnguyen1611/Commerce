@@ -37,13 +37,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={cx("wrapper")}>
-          <div className={cx("header")}>
+          <div className={cx("header-container")}>
             <HeaderTop />
             <Header />
-            <HeaderBottom />
           </div>
+          <HeaderBottom />
 
-          <div className={`${cx("content")} container`}>
+          <div className={`${cx("content")} `}>
             <SideBar /> <main>{children}</main>
           </div>
         </div>
