@@ -83,3 +83,10 @@
 .custom-tippy {
     background: #ffffff !important;
 }
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: none;
+    }
+}

@@ -34,3 +34,9 @@
 .brandItem:last-child::after {
     content: "";
 }
+
+@media (max-width: 768px) {
+    .featuredBrands {
+        padding: 8px;
+    }
+}

@@ -13,11 +13,23 @@
     border: 1px solid var(--background);
     width: 100%;
     /* để responsive */
-
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     place-items: center;
 
+}
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 8px;
+    }
+
+    .list-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
 }
