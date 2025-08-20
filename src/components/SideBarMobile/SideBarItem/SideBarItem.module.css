@@ -1,0 +1,32 @@
+.sidebarItem {
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: black;
+}
+
+.sidebarItem:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    margin-right: 12px;
+
+}
+
+
+.trailing {
+    margin-left: auto;
+}
+
+
+.label {
+    font-size: 1.7rem;
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}

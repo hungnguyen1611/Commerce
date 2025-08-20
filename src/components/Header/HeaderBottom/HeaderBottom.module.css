@@ -16,9 +16,9 @@
 
 .list-commit {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
     gap: 8px;
-
+    overflow: auto;
 
 }
 
@@ -30,12 +30,16 @@
     border-left: 1px solid #ccc;
 }
 
+
+
 .list-item {
     padding: 8px 12px;
     position: relative;
     display: flex;
     align-items: center;
     cursor: pointer;
+    white-space: nowrap;
+
 
 }
 

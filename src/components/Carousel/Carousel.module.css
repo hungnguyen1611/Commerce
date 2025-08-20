@@ -95,3 +95,32 @@
 
     background-color: white;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        padding: 8px 0px;
+    }
+
+    .slickPrev,
+    .slickNext {
+        width: 24px;
+        height: 24px;
+    }
+
+    .slickPrev {
+        left: 4px;
+
+    }
+
+    .slickNext {
+        right: 4px;
+    }
+
+    .slideImage {
+        padding: 0 2px;
+    }
+
+
+}

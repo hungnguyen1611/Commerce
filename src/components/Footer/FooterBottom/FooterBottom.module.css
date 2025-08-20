@@ -56,3 +56,9 @@
 .intro a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .footerBottom {
+        padding: 8px;
+    }
+}

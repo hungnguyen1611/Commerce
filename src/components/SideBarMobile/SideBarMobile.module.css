@@ -1,0 +1,116 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Ẩn ngoài màn hình */
+    width: 250px;
+    height: 100%;
+    background-color: var(--background);
+    color: black;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+    /* Hiện ra */
+}
+
+.sidebar h3 {
+    font-size: 2rem;
+    /* color: #f63; */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-list {
+    margin-top: 16px;
+}
+
+
+
+
+/* Custom tippy */
+
+.menu-list-tippy {
+    list-style: none;
+    margin: 0;
+    /* background: #fff; */
+    background: rgba(0, 0, 0, 0.1);
+
+    border-radius: 6px;
+    min-width: 120px;
+}
+
+.menu-item-tippy {
+    padding: 16px;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.menu-item-tippy:hover {
+    background: var(--background-hover);
+}
+
+.custom-tippy {
+    background: #ffffff !important;
+    padding: 0;
+
+}
+
+.custom-tippy :global(.tippy-content) {
+    padding: 0;
+
+
+}
+
+/* Qr code  */
+
+.qr-code {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+}
+
+.qr-code>img {
+    width: 100%;
+}
+
+.download-container {
+    position: relative;
+    display: inline-block;
+}
+
+.qr-code.show {
+    display: block;
+    visibility: visible;
+}

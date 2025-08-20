@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import classNames from "classnames/bind";
-import styles from "./Header.module.css";
-import Search from "./Search/Search";
 import Link from "next/link";
-import { FaUserLarge } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
+import { FaUserLarge } from "react-icons/fa6";
 import { FiShoppingBag } from "react-icons/fi";
 import { MdOutlinePlace } from "react-icons/md";
 import Badge from "../Badge/Badge";
+import SideBarMobile from "../SideBarMobile/SideBarMobile";
+import styles from "./Header.module.css";
+import Search from "./Search/Search";
 export default function Header() {
   const cx = classNames.bind(styles);
   return (
@@ -42,6 +43,7 @@ export default function Header() {
               />
             </Badge>
           </div>
+          <SideBarMobile />
         </div>
         <div className={cx("categories-wrapper")}>
           <ul className={cx("categories")}>

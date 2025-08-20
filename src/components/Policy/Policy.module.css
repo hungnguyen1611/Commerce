@@ -3,7 +3,7 @@
     padding: 16px;
     background: var(--background);
     gap: 16px;
-    overflow-x: hidden;
+    overflow-x: auto;
 
 }
 
@@ -19,6 +19,14 @@
 .policy-item {
     text-align: center;
     cursor: pointer;
+
+}
+
+.policy-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 
 }
 

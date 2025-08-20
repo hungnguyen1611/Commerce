@@ -44,7 +44,10 @@ export default function RootLayout({
           <HeaderBottom />
 
           <div className={`${cx("content")} `}>
-            <SideBar /> <main>{children}</main>
+            <aside>
+              <SideBar />
+            </aside>{" "}
+            <main>{children}</main>
           </div>
         </div>
       </body>

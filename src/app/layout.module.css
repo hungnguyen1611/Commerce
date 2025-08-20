@@ -3,8 +3,7 @@
   flex-direction: column;
   height: 100vh;
   background-color: var(--background-secondary);
-  /* align-items: center; */
-  /* Chiều cao tối thiểu toàn màn hình */
+
 }
 
 .header-container {
@@ -17,7 +16,7 @@
   display: grid;
   grid-template-columns: 2fr 10fr;
   flex: 1;
-  padding: 16px 24px 0;
+  padding: 16px 24px;
   gap: 16px;
   height: var(--height-content);
   overflow: hidden;
@@ -26,23 +25,37 @@
 
 .content>main {
   height: var(--height-main);
-  /* background: var(--background); */
-  /* padding: 16px; */
   flex: 1;
   min-width: 0;
   overflow-y: auto;
   height: 100%;
   border-radius: 8px;
-  /* Ngăn overflow phá layout */
 
 }
 
-.content> :first-child {
-  /* background: var(--background); */
-  /* Màu nền sidebar */
-  /* padding: 16px; */
+.content>aside {
   overflow-y: auto;
   height: 100%;
+
+
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 8px;
+  }
+
+
+  .content>aside {
+    display: none;
+
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    padding: 16px 0px;
+
+  }
 
 
 }

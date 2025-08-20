@@ -106,3 +106,35 @@
 .address {
     text-decoration: underline;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .header-logo {
+        display: none;
+    }
+
+    /* Mobile: chỉ giữ lại ShoppingBag */
+    .acount>*:not(:last-child) {
+        display: none;
+    }
+
+    .search-acount-wrapper {
+
+        gap: 16px;
+    }
+
+    .place {
+        display: none;
+    }
+
+    .categories-wrapper {
+        justify-content: center;
+    }
+
+    .categories-wrapper a {
+        text-align: center;
+    }
+
+}

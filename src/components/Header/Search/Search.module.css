@@ -26,6 +26,17 @@
     font-weight: 600;
     padding: 0 12px;
     margin-right: 12px;
+    position: relative;
+    /* để pseudo-element định vị */
+}
+
+.button-all::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
     border-right: 1px solid #ccc;
 }
 
@@ -36,6 +47,10 @@
     border-radius: inherit;
     padding: 8px;
     width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
 
 }
 
@@ -77,4 +92,30 @@
 
 .menu-item:hover {
     background: var(--background-hover);
+}
+
+@media screen and (max-width: 768px) {
+
+    .button-search,
+    .button-all {
+        padding: 4px 4px;
+        font-size: 12px;
+        width: auto;
+        height: 28px;
+
+    }
+
+    .wrapper::before {
+
+        display: none;
+    }
+
+    .button-all::after {
+
+        height: 60%;
+
+    }
+
+
+
 }

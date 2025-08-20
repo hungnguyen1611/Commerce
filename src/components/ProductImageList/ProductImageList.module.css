@@ -15,3 +15,14 @@
     cursor: pointer;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+    .list-image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .wrapper {
+        padding: 8px;
+    }
+}
