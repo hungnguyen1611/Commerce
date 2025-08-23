@@ -1,0 +1,41 @@
+.wrapper {
+    margin-top: 16px;
+
+    background-color: var(--background-mobile);
+}
+
+.suggest {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: var(--background);
+    font-size: 1.8rem;
+}
+
+.favourite {
+    padding: 16px;
+    background-color: var(--background);
+    max-width: 80px;
+    color: var(--main-light-color);
+    background: rgba(0, 96, 255, 0.05);
+    aspect-ratio: 1/1;
+    border-bottom: 1px solid var(--main-light-color);
+
+}
+
+.favourite img {
+    width: 40px;
+}
+
+.see-more-btn {
+    padding: 4px 0px;
+    color: var(--main-light-color);
+    background: var(--background);
+    border: 1px solid var(--main-light-color);
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    display: block;
+}

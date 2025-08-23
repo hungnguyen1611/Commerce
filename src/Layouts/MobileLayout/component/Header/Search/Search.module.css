@@ -1,0 +1,31 @@
+.wrapper {
+
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    gap: 8px;
+    background-color: var(--background);
+
+    /* background: #ccc; */
+}
+
+
+.input-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 4px;
+}

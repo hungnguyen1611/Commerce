@@ -1,0 +1,54 @@
+.wrapper {
+    background-color: var(--background);
+    padding: 16px;
+}
+
+.wrapper> :first-child {
+    margin-bottom: 16px;
+}
+
+
+.list-card {
+
+    border: 1px solid var(--background);
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.list-card>* {
+    flex: 0 0 40%
+}
+
+
+.list-card::-webkit-scrollbar {
+    display: none;
+}
+
+.flash-sale {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.flash-sale a {
+    color: var(--main-light-color)
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 8px;
+    }
+
+    .list-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}

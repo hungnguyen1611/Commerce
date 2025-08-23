@@ -1,0 +1,47 @@
+.wrapper {
+    position: relative;
+    /* background: var(--background); */
+    border-radius: 16px;
+}
+
+
+/* Dot custom */
+
+.wrapper :global(.slick-dots) {
+    bottom: -20px;
+
+}
+
+
+.wrapper :global(.slick-dots > li) {
+    width: 25px;
+    height: 4px;
+}
+
+
+.wrapper :global(.slick-dots > li > button::before) {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+
+.wrapper :global(.slick-dots > li.slick-active > button::before) {
+    background-color: var(--main-color);
+
+}
+
+.wrapper :global(.slick-dots li button:hover::before) {
+    background-color: var(--main-color) !important;
+}
+
+
+.slide-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    border-radius: 16px;
+
+}

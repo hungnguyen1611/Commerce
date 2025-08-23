@@ -1,8 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
+import Production from "@/component/Production/Production";
+import React from "react";
 import classNames from "classnames/bind";
-import styles from "./page.module.css";
-import { detectDevice } from "@/lib/detectDevice";
-import HomeDeskTop from "./(Home)/HomeDeskTop/HomeDeskTop";
-import HomeMobile from "./(Home)/HomeMobile/HomeMobile";
+import styles from "./HomeMobile.module.css";
+import FlashSale from "@/component/FlashSale/FlashSale";
+import Brand from "@/component/Brand/Brand";
+import ForeignProduct from "@/component/ForeignProduct/ForeignProduct";
+import YouMayLike from "@/component/YouMayLike/YouMayLike";
+import ProductImageList from "@/component/ProductImageList/ProductImageList";
+import Footer from "@/component/Footer/Footer";
 const deals = [
   {
     href: "/",
@@ -149,9 +155,25 @@ const brands = [
   },
 ];
 
-export default async function Home() {
+export default function HomeMobile() {
   const cx = classNames.bind(styles);
 
-  const isMobile = await detectDevice();
-  return <div>{isMobile ? <HomeMobile /> : <HomeDeskTop />}</div>;
+  return (
+    <div className={cx("wrapper")}>
+      <Production data={deals} />
+      <FlashSale data={deals} />
+      <Brand data={brands} />
+      <ForeignProduct data={deals} />
+      <YouMayLike data={deals} />
+      <h4 className={cx("suggest")}>Gợi ý hôm nay</h4>
+      <div className={cx("favourite")}>
+        <img src={"/assets/images/favourite.png"} alt="icon" />
+        Dành cho bạn
+      </div>
+      <ProductImageList data={brands} />
+      <button className={cx("see-more-btn")}>Xem thêm</button>
+
+      <Footer />
+    </div>
+  );
 }

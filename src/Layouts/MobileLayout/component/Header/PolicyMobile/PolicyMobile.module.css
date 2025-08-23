@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.wrapper-policy {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wrapper-policy {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* padding: 4px; */
+    background: var(--background);
+    gap: 4px;
+    width: 100%;
+
+
+}
+
+.policy-img {
+    width: 44px;
+    border-radius: 12px;
+
+}
+
+
+.policy-item {
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.policy-item p {}
+
+/* .policy-item>*+* {
+    margin-top: 4px;
+} */

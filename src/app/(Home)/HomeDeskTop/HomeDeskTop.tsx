@@ -1,8 +1,18 @@
+import React from "react";
+import styles from "./HomeDeskTop.module.css";
 import classNames from "classnames/bind";
-import styles from "./page.module.css";
-import { detectDevice } from "@/lib/detectDevice";
-import HomeDeskTop from "./(Home)/HomeDeskTop/HomeDeskTop";
-import HomeMobile from "./(Home)/HomeMobile/HomeMobile";
+import Carousel from "@/DesktopComponent/Carousel/Carousel";
+import Policy from "@/DesktopComponent/Policy/Policy";
+
+import FloatingSidebar from "@/DesktopComponent/FloatingSidebar/FloatingSidebar";
+import Production from "@/component/Production/Production";
+import FlashSale from "@/component/FlashSale/FlashSale";
+import Brand from "@/component/Brand/Brand";
+import ForeignProduct from "@/component/ForeignProduct/ForeignProduct";
+import YouMayLike from "@/component/YouMayLike/YouMayLike";
+import ProductImageList from "@/component/ProductImageList/ProductImageList";
+import Footer from "@/component/Footer/Footer";
+
 const deals = [
   {
     href: "/",
@@ -149,9 +159,20 @@ const brands = [
   },
 ];
 
-export default async function Home() {
+export default function HomeDeskTop() {
   const cx = classNames.bind(styles);
-
-  const isMobile = await detectDevice();
-  return <div>{isMobile ? <HomeMobile /> : <HomeDeskTop />}</div>;
+  return (
+    <div className={cx("wrapper")}>
+      <Carousel />
+      <Policy />
+      <Production data={deals} />
+      <FlashSale data={deals} />
+      <Brand data={brands} />
+      <ForeignProduct data={deals} />
+      <YouMayLike data={deals} />
+      <ProductImageList data={brands} />
+      <Footer />
+      <FloatingSidebar />
+    </div>
+  );
 }

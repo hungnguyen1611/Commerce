@@ -1,0 +1,12 @@
+.wrapper {
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+    color: var(--text-secondary);
+    padding: 16px;
+    background: var(--background);
+
+
+}
