@@ -1,0 +1,10 @@
+.wrapper {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: orangered;
+    z-index: 1;
+}

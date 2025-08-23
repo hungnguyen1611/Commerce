@@ -1,0 +1,30 @@
+.wrapper {
+    background-color: var(--background);
+    padding: 16px;
+}
+
+
+
+.list-card {
+
+    border: 1px solid var(--background);
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    place-items: center;
+    margin-top: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.list-card::-webkit-scrollbar {
+    display: none;
+}
+
+.foreign-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 16px;
+}

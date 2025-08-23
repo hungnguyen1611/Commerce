@@ -1,0 +1,85 @@
+.footer {
+    background: #fff;
+    border-top: 1px solid #eee;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0 8px;
+    margin-top: 24px;
+
+}
+
+.footerCol h4 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--text-footer);
+    opacity: 0.8;
+}
+
+.footerCol p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.footerCol ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.footerCol ul li {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+.footerCol ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footerCol ul li a:hover {
+    text-decoration: underline;
+}
+
+.payment {
+    display: flex;
+    gap: 8px;
+}
+
+.certificates img,
+.payment img,
+.payment svg,
+.social svg,
+.apps img {
+    max-height: 40px;
+
+}
+
+.social {
+    display: flex;
+    gap: 8px;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+
+}
+
+.apps img {
+    height: 40px;
+}
+
+.logo_tikinow {
+    width: 100px;
+
+}
