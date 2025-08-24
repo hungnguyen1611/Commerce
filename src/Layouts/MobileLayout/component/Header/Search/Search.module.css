@@ -1,5 +1,5 @@
 .wrapper {
-
+    position: relative;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -7,10 +7,29 @@
     padding: 8px;
     gap: 8px;
     background-color: var(--background);
+    z-index: 4;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* background: #ccc; */
+
 }
 
+.wrapper-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 8px;
+    background: var(--background);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
 
 .input-inner {
     display: flex;
